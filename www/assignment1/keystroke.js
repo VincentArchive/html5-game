@@ -1,5 +1,14 @@
+/*
+KEY CODES
+-------------
+UP 		38
+DOWN	40
+LEFT	37
+RIGHT	39
+-------------
+*/
 $(function( ){
- 	$('#target').bind('keyup', typer);
+ 	$('#body').bind('keyup', typer);
 });
 
 function typer(event){
@@ -21,11 +30,5 @@ function typer(event){
 			button = "an unknow button"
 	}
 
-	$('#p1').text('You pressed '+ button);
+	$('#output').text('You pressed '+ button);
 }
-/*
-UP 		38
-DOWN	40
-LEFT	37
-RIGHT	39
-*/
